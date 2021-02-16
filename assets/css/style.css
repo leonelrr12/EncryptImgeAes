@@ -1,0 +1,102 @@
+body{
+    font:15px/1.3 'Raleway', sans-serif;
+    width:100%;
+    height:100%;
+    position:absolute;
+    overflow:hidden;
+}
+
+#stage{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    transition:top 0.4s;
+}
+
+
+#stage > div{  /* The step divs */
+    height:100%;
+    position:relative;
+}
+
+#stage h1{
+    font-weight:normal;
+    font-size:48px;
+    text-align:center;
+    margin-bottom:60px;
+}
+
+#stage h2{
+    font-weight: normal;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: -40px 0 45px;
+    font-style: italic;
+}
+
+
+.content{
+    position:absolute;
+    text-align:center;
+    left:0;
+    top:20%;
+    width:100%;
+}
+
+[class*="if-"]{
+    display:none;
+}
+
+body.encrypt .if-encrypt{
+    display:block;
+}
+
+body.decrypt .if-decrypt{
+    display:block;
+}
+
+.button {
+
+    color: white;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;margin-left: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.button.green {
+    background-color: rgb(32, 131, 65);
+    border: 1px solid  rgb(25, 100, 48);
+}
+.button.magenta {
+    background-color: magenta;
+    border: 1px solid  rgb(138, 35, 138);
+}
+.button.blue {
+    background-color:rgb(13, 65, 206);
+    border: 1px solid  blue;
+}
+.button.red {
+    background-color:red;
+    border: 1px solid rgb(109, 31, 31);
+}
+
+.back {
+    position: absolute;
+    top: 20px;
+    z-index: 5;
+}
+
+img {
+    border: 1px solid blue;
+}
+
+a.download {
+    display: block;
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
